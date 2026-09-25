@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Educational Website</title>
+    <link rel="stylesheet" href="Knowledge hub_html.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            Knowledge Hub
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#courses">Learning Path</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#Faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+    <div class="hero-text">
+        <h1>Learn Anything, Anytime</h1>
+
+        <p>
+            Free tutorials, notes, quizzes and practical learning platform
+            to become industry-ready developer.
+        </p>
+
+        <a href="about.html" class="btn">About Us</a>
+    </div>
+
+</section>
+
+     <!-- MODERN FLOATING STATS WITH CLICK FUNCTION -->
+<section class="stats-container">
+    <div class="stats-card">
+        
+        <!-- Stat 1: Clickable -->
+       <div class="stat clickable-stat">
+    <a href="student.html" class="stat-link">
+        <div>
+            <h2 class="counter" data-target="500">500</h2>
+            <span>+</span>
+            <p>Active Students</p>
+        </div>
+    </a>
+</div>
+        <!-- Stat 2: Clickable -->
+        <div class="stat clickable-stat">
+    <a href="premium.html" class="stat-link">
+        <h2 class="counter" data-target="20">0</h2>
+        <span>+</span>
+        <p>Learning Programs</p>
+    </a>
+</div>
+       <div class="stat clickable-stat">
+    <a href="projects.html" class="stat-link">
+        <div>
+            <h2 class="counter" data-target="30">0</h2>
+            <span>+</span>
+            <p>Industry Projects</p>
+        </div>
+    </a>
+</div>
+        <!-- Stat 4: Clickable -->
+         <div class="stat clickable-stat">
+    <a href="success.html" class="stat-link">
+
+        <h2 class="counter" data-target="98">0</h2>
+        <span>%</span>
+        <p>Success Rate</p>
+
+    </a>
+</div>
+<
+       
+    </div>
+</section>
+
+
+
+
+
+
+      
+    <!--our courses-->
+<section class="courses" id="courses">
+
+    <div class="section-title">
+         <h2>🚀 Learning Paths</h2>
+    <p>
+        Choose your roadmap and become job-ready with industry-level skills.
+    </p>
+    </div>
+
+    <div class="course-container">
+
+        <!-- Course 1 -->
+        <div class="course-card">
+            <img src="images\html-basic-format.png" alt="HTML Course">
+
+            <div class="course-content">
+                    <span class="course-badge">🔥 Best Seller</span>
+
+                <h3>HTML & CSS Mastery</h3>
+
+                <p>
+                    Learn modern responsive websites using HTML5, CSS3, Flexbox and Grid.
+                </p>
+
+                <div class="course-info">
+                    <span>⏳ 8 Weeks</span>
+                    <span>⭐ 4.9</span>
+                </div>
+
+                <div class="course-buttons">
+                   
+
+                    <button class="enroll-btn"
+                        onclick="openEnrollModal('HTML & CSS Mastery')">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+            <img src="images\html & css.jpeg" alt="JavaScript">
+
+            <div class="course-content">
+                <h3>JavaScript Development</h3>
+
+                <p>
+                    Build interactive websites with DOM, APIs, Events and ES6+.
+                </p>
+
+                <div class="course-info">
+                    <span>⏳ 10 Weeks</span>
+                    <span>⭐ 4.8</span>
+                </div>
+
+                <div class="course-buttons">
+                    
+
+                    <button class="enroll-btn"
+                        onclick="openEnrollModal('JavaScript Development')">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+            <img src="images\react js.jpeg" alt="React">
+
+            <div class="course-content">
+                <h3>React JS Bootcamp</h3>
+
+                <p>
+                    Learn Components, Hooks, Routing and modern frontend development.
+                </p>
+
+                <div class="course-info">
+                    <span>⏳ 12 Weeks</span>
+                    <span>⭐ 5.0</span>
+                </div>
+
+                <div class="course-buttons">
+                   
+
+                    <button class="enroll-btn"
+                        onclick="openEnrollModal('React JS Bootcamp')">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card">
+            <img src="images\python pro.png" alt="Python">
+
+            <div class="course-content">
+                <span class="course-badge">🔥 Best Seller</span>
+                <h3>Python Programming</h3>
+
+                <p>
+                    Learn automation, scripting and real-world Python projects.
+                </p>
+
+                <div class="course-info">
+                    <span>⏳ 10 Weeks</span>
+                    <span>⭐ 4.9</span>
+                </div>
+
+                <div class="course-buttons">
+                   
+                    <button class="enroll-btn"
+                        onclick="openEnrollModal('Python Programming')">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ENROLL MODAL -->
+<div id="enrollModal" class="course-modal">
+
+    <div class="course-modal-content">
+
+        <span class="close-course"
+              onclick="closeEnrollModal()">&times;</span>
+
+        <h2>Course Enrollment</h2>
+
+        <p id="selectedCourse"></p>
+
+        <input type="text"
+               placeholder="Enter Your Name">
+
+        <input type="email"
+               placeholder="Enter Your Email">
+
+        <button onclick="submitEnrollment()">
+            Confirm Enrollment
+        </button>
+
+    </div>
+
+</div>
+
+<!-- STUDENT REVIEWS SECTION -->
+<section class="reviews-section">
+
+    <div class="review-header">
+        <h2>🌟 Student Reviews</h2>
+        <p>See what our learners say about Knowledge Hub</p>
+    </div>
+
+    <div class="review-slider">
+
+        <button class="review-btn" onclick="prevReview()">❮</button>
+
+        <div class="review-wrapper">
+
+            <div class="review-track" id="reviewTrack">
+
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <img src="images\stu 1.jpg">
+                    <h3>Rahul Sharma</h3>
+                    <span>Frontend Developer</span>
+
+                    <p>
+                        Knowledge Hub helped me learn web development from scratch.
+                        The projects were extremely practical and useful.
+                    </p>
+
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <img src="images\stu 3.jpg">
+                    <h3>Priya Verma</h3>
+                    <span>Web Designer</span>
+
+                    <p>
+                        Amazing learning platform. Every concept is explained
+                        clearly and the quizzes are very helpful.
+                    </p>
+
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <img src="images\stu 4.jpg">
+                    <h3>Arjun Patel</h3>
+                    <span>React Developer</span>
+
+                    <p>
+                        The premium courses helped me build a strong portfolio
+                        and improve my development skills.
+                    </p>
+
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card">
+                    <img src="images\stu 5.jpg">
+                    <h3>Sneha Gupta</h3>
+                    <span>Software Engineer</span>
+
+                    <p>
+                        Mentorship support is excellent. I learned real-world
+                        project development here.
+                    </p>
+
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="review-card">
+                    <img src="images\stu 2.jpg">
+                    <h3>Aman Singh</h3>
+                    <span>Full Stack Developer</span>
+
+                    <p>
+                        One of the best platforms for learning modern web
+                        development with practical examples.
+                    </p>
+
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="review-btn" onclick="nextReview()">❯</button>
+
+    </div>
+
+</section>
+
+    <!-- QUIZ SECTION -->
+
+    <section class="quiz-section" id="quiz">
+
+    <div class="quiz-header">
+    <span class="quiz-badge">🔥 Interactive Challenge</span>
+
+    <h2>Test Your Frontend Knowledge</h2>
+
+    <p>
+        Challenge yourself with HTML, CSS and JavaScript questions
+        and discover your skill level.
+    </p>
+</div>
+
+    <div class="quiz-box">
+
+        <h3 id="question"></h3>
+
+        <div id="options"></div>
+
+        <p id="progress"></p>
+
+        <button id="nextBtn" onclick="nextQuestion()">
+            Next Question →
+        </button>
+
+    </div>
+
+</section>
+
+
+    <!---faq-->
+    <section class="faq-section" id="Faq">
+
+    <div class="faq-header">
+        <h2>❓ Frequently Asked Questions</h2>
+        <p>Find answers to the most common questions about Knowledge Hub.</p>
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <button class="faq-question">1. What is Knowledge Hub? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Knowledge Hub is an online learning platform that provides tutorials, quizzes, projects, and premium courses for students and developers.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">2. Are the courses beginner friendly? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Yes. Our courses are designed for complete beginners as well as intermediate learners.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">3. Do I get a certificate after completion? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Yes. Premium course students receive a completion certificate after finishing the course successfully.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">4. How can I enroll in a course? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Simply click the Enroll Now button and fill out the enrollment form.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">5. Are projects included in courses? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Yes. Every premium course includes practical industry-level projects.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">6. Can I access courses on mobile? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Yes. Our platform is fully responsive and works on mobile, tablet, and desktop devices.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">7. Is there any support available? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Yes. Premium students get dedicated mentor support and community assistance.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">8. What technologies can I learn here? <span>+</span></button>
+            <div class="faq-answer">
+                <p>You can learn HTML, CSS, JavaScript, React, Python, and Full Stack Development.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">9. Are quizzes available for practice? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Yes. Interactive quizzes help you test and improve your knowledge.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">10. How do I contact the Knowledge Hub team? <span>+</span></button>
+            <div class="faq-answer">
+                <p>You can use the Contact Us form below to reach our team directly.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- CONTACT SECTION -->
+
+   <section class="contact" id="contact">
+
+    <div class="contact-header">
+        <span class="contact-badge">📩 Get In Touch</span>
+
+        <h2>Contact Knowledge Hub</h2>
+
+        <p>
+            Have questions about our courses or learning paths?
+            We'd love to hear from you.
+        </p>
+    </div>
+
+    <div class="contact-container">
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="👤 Your Name"
+                required>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="📧 Your Email"
+                required>
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="✍ Your Message"
+                required>
+            </textarea>
+
+            <button type="submit">
+                🚀 Send Message
+            </button>
+
+        </form>
+
+        <div id="successMessage"></div>
+
+    </div>
+    <br>
+     <!-- Contact Info -->
+<div class="contact-info">
+
+    <h3>📞 Contact Information</h3>
+
+    <div class="contact-cards">
+
+       
+        <a href="mailto:support@knowledgehub.com" class="contact-card">
+            <div class="icon">📧</div>
+            <h4>Email Us</h4>
+            <p>support@knowledgehub.com</p>
+        </a>
+
+        <a href="tel:+917706931681" class="contact-card">
+            <div class="icon">📱</div>
+            <h4>Call Us</h4>
+            <p>+91 7706931681</p>
+        </a>
+
+        <a href="https://maps.google.com/?q=Mumbai,India" target="_blank" class="contact-card">
+            <div class="icon">📍</div>
+            <h4>Location</h4>
+            <p>Mumbai, India</p>
+        </a>
+
+        <a href="https://www.knowledgehub.com" target="_blank" class="contact-card">
+            <div class="icon">🌐</div>
+            <h4>Website</h4>
+            <p>www.knowledgehub.com</p>
+        </a>
+
+    </div>
+
+</div>
+<br>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 EduLearn | All Rights Reserved
+        </p>
+
+    </footer>
+<script src="knowledge_hub.js"></script>
+
+</body>
+
+</html>
