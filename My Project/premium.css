@@ -1,0 +1,214 @@
+/* =========================
+   PREMIUM COURSE PAGE CSS
+   WORKING WITH YOUR HTML
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #0b1220;
+    color: white;
+}
+
+/* ================= TOP BAR ================= */
+.top-bar{
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg,#1e3a8a,#0f172a);
+}
+
+.top-bar h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.top-bar p{
+    color: #cbd5e1;
+}
+
+/* ================= HERO ================= */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 8%;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.hero .btn{
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg,#6366f1,#22d3ee);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .btn:hover{
+    transform: scale(1.05);
+}
+
+/* ================= FEATURES ================= */
+.features{
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.features h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.features .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.features .card{
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.features .card:hover{
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.08);
+}
+
+/* ================= CURRICULUM ================= */
+.curriculum{
+    padding: 70px 8%;
+}
+
+.curriculum h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.curriculum .box{
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #6366f1;
+}
+
+.curriculum ul{
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #cbd5e1;
+}
+
+/* ================= PRICING ================= */
+.pricing{
+    padding: 80px 20px;
+    text-align: center;
+    background: radial-gradient(circle,#111827,#0b1220);
+}
+
+.pricing h2{
+    margin-bottom: 30px;
+}
+
+.price-card{
+    display: inline-block;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.price-card .old{
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+.price-card .new{
+    font-size: 40px;
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.price-card p{
+    margin: 10px 0;
+}
+
+/* FORM */
+.price-card form{
+    margin-top: 20px;
+}
+
+.price-card input{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.price-card button{
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg,#6366f1,#22d3ee);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.price-card button:hover{
+    transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #94a3b8;
+    margin-top: 40px;
+}
